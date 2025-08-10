@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Queens Supermarket</title>
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- Logo with emoji -->
+    <div class="logo">
+      <span>👑</span> Queens
+    </div>
+
+    <!-- Main navigation links -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="Weekly-Deals.html">Weekly Deals</a></li>
+      <li><a href="Loyalty-Program.html">Loyalty Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Placeholder for icons like cart, user etc (if needed later) -->
+    <div class="icons"></div>
+  </nav>
+
+  <!-- Hero Section with Background Image -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Organic & Local</h1>
+      <p>Supporting local farmers with sustainable practices</p>
+      <!-- Calls addToCart() JS function on button click -->
+      <button onclick="addToCart()">Shop Organic</button>
+    </div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <h2>👑 Welcome to Queens Supermarket</h2>
+    <p>Your Local Market with Royal Quality!</p>
+    <!-- Badges highlighting key features -->
+    <div class="badges">
+      <span>✅ Fresh produce daily</span>
+      <span>🛍️ Shop online or visit in-store</span>
+      <span>🚚 Free delivery on orders over $50</span>
+    </div>
+  </section>
+
+  <!-- Shop by Category Section -->
+  <section class="category-section">
+    <h2>Shop by Category</h2>
+    <div class="category-cards">
+      <!-- Each category card links to shop with filtered category if implemented -->
+      <a href="#shop" class="card" data-category="fruits">
+        <img src="image/jo-sonn-zeFy-oCUhV8-unsplash.jpg" alt="Fruits" />
+        <span class="emoji">🍑</span>
+        <p>Fruits</p>
+      </a>
+
+      <a href="#shop" class="card" data-category="vegetables">
+        <img src="image/photo-1590779033100-9f60a05a013d.avif" alt="Vegetables" />
+        <span class="emoji">🥦</span>
+        <p>Vegetables</p>
+      </a>
+
+      <a href="#shop" class="card" data-category="bakery">
+        <img src="image/premium_photo-1675788938970-e2716f23b1f9.avif" alt="Bakery" />
+        <span class="emoji">🥖</span>
+        <p>Bakery</p>
+      </a>
+
+      <a href="#shop" class="card" data-category="dairy">
+        <img src="image/direy.avif" alt="Dairy" />
+        <span class="emoji">🧀</span>
+        <p>Dairy</p>
+      </a>
+
+      <a href="#shop" class="card" data-category="meat">
+        <img src="image/meat.avif" alt="Meat" />
+        <span class="emoji">🥩</span>
+        <p>Meat</p>
+      </a>
+
+      <a href="#shop" class="card" data-category="snacks">
+        <img src="image/photo-1614735241165-6756e1df61ab.avif" alt="Snacks" />
+        <span class="emoji">🍪</span>
+        <p>Snacks</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Why Shop With Us Section -->
+  <section class="why-us">
+    <h2>Why Shop With Us</h2>
+    <div class="benefits">
+      <!-- Each benefit block can be dynamically populated from backend if needed -->
+      <div class="benefit">
+        <span>🚚</span>
+        <h3>Fresh Daily</h3>
+        <p>Our produce is delivered fresh every morning, ensuring you get the highest quality products.</p>
+      </div>
+
+      <div class="benefit">
+        <span>🧡</span>
+        <h3>Local Suppliers</h3>
+        <p>We partner with local farmers and producers to support our community and reduce our carbon footprint.</p>
+      </div>
+
+      <div class="benefit">
+        <span>🐷</span>
+        <h3>Affordable Prices</h3>
+        <p>Enjoy quality products at competitive prices, with weekly deals and a rewarding loyalty program.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Deals Section -->
+  <section class="weekly-deals">
+    <h2>Weekly Deals</h2>
+    <div class="deals-container">
+      <!-- Each card represents a product deal, repeatable for backend data -->
+      
+      <div class="card">
+        <div class="image-container">
+          <img src="image/Organic Avocados 🥑.avif" alt="Organic Avocados" />
+          <span class="save-tag">SAVE 40%</span>
+        </div>
+        <div class="content">
+          <p class="product-name">Organic Avocados 🥑</p>
+          <p class="price">$2.99 <span class="old-price">$4.99</span></p>
+          <!-- Data attributes useful for JS cart or backend integration -->
+          <button class="add-to-cart" data-name="Organic Avocados" data-price="2.99">
+            🛒 Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-container">
+          <img src="image/Fresh Strawberries.avif" alt="Fresh Strawberries" />
+          <span class="save-tag">SAVE 30%</span>
+        </div>
+        <div class="content">
+          <p class="product-name">Fresh Strawberries 🍓</p>
+          <p class="price">$3.49 <span class="old-price">$4.99</span></p>
+          <button class="add-to-cart" data-name="Fresh Strawberries" data-price="3.49">
+            🛒 Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Add additional product cards similarly -->
+    </div>
+  </section>
+
+  <!-- Newsletter Signup Section -->
+  <section class="newsletter">
+    <h2>Join Our Newsletter</h2>
+    <p>Subscribe to receive updates on weekly deals, events, and recipes.</p>
+    <!-- Email subscription form, to be handled in backend -->
+    <form>
+      <input type="email" placeholder="Your email address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <small>We respect your privacy. Unsubscribe at any time.</small>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <!-- Brand Info & Social Media -->
+      <div class="footer-column">
+        <h3>
+          <i class="fa-solid fa-crown orange-text"></i> Queens
+        </h3>
+        <p>
+          Your local market with royal quality! We provide fresh produce daily
+          with a focus on local suppliers and affordable prices.
+        </p>
+        <div class="social-icons">
+          <!-- Social links, update URLs accordingly -->
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links Navigation -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Weekly Deals</a></li>
+          <li><a href="#">Loyalty Program</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>
+          <i class="fa-solid fa-location-dot orange-text"></i> 123 Market Street,
+          Cityville, State 12345
+        </p>
+        <p>
+          <i class="fa-solid fa-phone orange-text"></i> (555) 123-4567
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope orange-text"></i> info@queensmarket.com
+        </p>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <p>
+          <i class="fa-regular fa-clock orange-text"></i> Monday - Friday <br />
+          <span class="orange-text">8:00 AM - 9:00 PM</span>
+        </p>
+        <p>
+          <i class="fa-regular fa-clock orange-text"></i> Saturday <br />
+          <span class="orange-text">8:00 AM - 7:00 PM</span>
+        </p>
+        <p>
+          <i class="fa-regular fa-clock orange-text"></i> Sunday <br />
+          <span class="orange-text">10:00 AM - 6:00 PM</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      &copy; 2025 Queens Supermarket. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Queens Supermarket</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <span>👑</span> Queens
+    </div>
+    <!-- Navigation links -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="Weekly-Deals.html">Weekly Deals</a></li>
+      <li><a href="Loyalty-Program.html">Loyalty Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="icons">
+      <!-- Placeholder for icons like cart, user profile, search -->
+      <!-- Backend can dynamically update cart count here -->
+    </div>
+  </nav>
+
+  <!-- Banner Section -->
+  <div class="banner">
+    <span>LIMITED TIME ONLY</span>
+    <h1>This Week's Special Deals</h1>
+    <p>Save big on fresh produce and pantry essentials. New deals every week!</p>
+    <button>🔥 Deals refresh every Monday</button>
+  </div>
+
+  <!-- Featured Deals Section -->
+  <div class="featured">
+    <h2>Featured Deals</h2>
+    <div class="products">
+
+      <!-- Product Card Template: Ideally rendered dynamically from backend data -->
+      <div class="card">
+        <div class="card-img">
+          <span class="discount">SAVE 40%</span>
+          <img src="image/Organic Avocados 🥑.avif" alt="Avocado" />
+        </div>
+        <div class="card-content">
+          <div class="category">Fruits</div>
+          <div class="card-title">Organic Avocados</div>
+          <div>
+            <span class="price">$2.99</span>
+            <span class="old-price">$4.99</span>
+          </div>
+          <div class="timer">⏳ Deal ends in: 2d 23h 58m</div>
+          <div class="limited">Limited quantity available!</div>
+          <button class="add-cart">🛒 Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <span class="discount">SAVE 30%</span>
+          <img src="image/Fresh Strawberries.avif" alt="Strawberries" />
+        </div>
+        <div class="card-content">
+          <div class="category">Fruits</div>
+          <div class="card-title">Fresh Strawberries</div>
+          <div>
+            <span class="price">$3.49</span>
+            <span class="old-price">$4.99</span>
+          </div>
+          <div class="timer">⏳ Deal ends in: 1d 23h 58m</div>
+          <div class="limited">Limited quantity available!</div>
+          <button class="add-cart">🛒 Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Product Sections by Category -->
+  <!-- Each product card should be dynamically generated from backend API or database -->
+  <div class="section">
+    <div class="section-header">
+      <h2>Fruits</h2>
+      <a href="#" class="view-all">View all →</a>
+    </div>
+    <div class="products">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/Organic Avocados 🥑.avif" alt="Organic Avocados" />
+          <span class="discount">SAVE 40%</span>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Organic Avocados</div>
+          <span class="price">$2.99</span>
+          <span class="old-price">$4.99</span>
+          <div class="countdown">⏱ 2d 23h 56m</div>
+          <button class="add-to-cart">🛒 Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/Fresh Strawberries.avif" alt="Fresh Strawberries" />
+          <span class="discount">SAVE 30%</span>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Fresh Strawberries</div>
+          <span class="price">$3.49</span>
+          <span class="old-price">$4.99</span>
+          <div class="countdown">⏱ 1d 23h 56m</div>
+          <button class="add-to-cart">🛒 Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Repeat similar product sections for Bakery, Meat, Dairy, Vegetables, Beverages -->
+  <!-- Backend should provide data including: name, images, prices, discounts, stock quantity, and deal timers -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3><i class="fa-solid fa-crown orange-text"></i> Queens</h3>
+        <p>Your local market with royal quality! We provide fresh produce daily with a focus on local suppliers and affordable prices.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Weekly Deals</a></li>
+          <li><a href="#">Loyalty Program</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot orange-text"></i> 123 Market Street, Cityville, State 12345</p>
+        <p><i class="fa-solid fa-phone orange-text"></i> (555) 123-4567</p>
+        <p><i class="fa-solid fa-envelope orange-text"></i> info@queensmarket.com</p>
+      </div>
+      <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <p><i class="fa-regular fa-clock orange-text"></i> Monday - Friday <br /><span class="orange-text">8:00 AM - 9:00 PM</span></p>
+        <p><i class="fa-regular fa-clock orange-text"></i> Saturday <br /><span class="orange-text">8:00 AM - 7:00 PM</span></p>
+        <p><i class="fa-regular fa-clock orange-text"></i> Sunday <br /><span class="orange-text">10:00 AM - 6:00 PM</span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Queens Supermarket. All rights reserved.
+    </div>
+  </footer>
+
+  <!--
+    BACKEND INTEGRATION NOTES:
+    - Products and categories data should come from an API or database.
+    - Use templating engines (e.g., EJS, Handlebars, React, Vue) or server-side rendering (SSR) to generate product cards dynamically.
+    - 'Add to Cart' buttons should trigger JavaScript functions or API calls to update the user's shopping cart.
+    - Countdown timers and stock availability should be dynamically updated from backend.
+    - Navigation and footer quick links can also be driven by backend CMS or config files.
+    - For scalability, implement RESTful or GraphQL APIs to fetch and update product and cart data.
+    - Authentication for Loyalty Program and Contact forms to be handled by backend with proper validation.
+  -->
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Queens Supermarket</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- Logo with crown emoji -->
+    <div class="logo">
+      <span>👑</span> Queens
+    </div>
+
+    <!-- Navigation Links -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="Weekly-Deals.html">Weekly Deals</a></li>
+      <li><a href="Loyalty-Program.html">Loyalty Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Placeholder for icons (e.g., cart, profile) -->
+    <div class="icons"></div>
+  </nav>
+
+  <!-- Loyalty Program Banner Section -->
+  <div class="loyalty-header">
+    <div style="font-size: 30px;">👑</div>
+    <h1>Queens Loyalty Program</h1>
+    <p>Earn points with every purchase and enjoy exclusive rewards, discounts, and special offers.</p>
+    <button>Sign Up & Save</button>
+  </div>
+
+  <!-- How It Works Section -->
+  <div class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <!-- Step 1: Sign Up -->
+      <div class="step">
+        <div class="step-icon">💳</div>
+        <h3>Sign Up</h3>
+        <p>Register for free in-store or online. Get 100 bonus points just for joining!</p>
+      </div>
+
+      <!-- Step 2: Earn Points -->
+      <div class="step">
+        <div class="step-icon">📈</div>
+        <h3>Earn Points</h3>
+        <p>Earn 1 point for every $1 spent. Double points on weekly specials and featured products.</p>
+      </div>
+
+      <!-- Step 3: Redeem Rewards -->
+      <div class="step">
+        <div class="step-icon">🎁</div>
+        <h3>Redeem Rewards</h3>
+        <p>Use your points for discounts, free products, or exclusive offers. No minimum points required!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Membership Tiers Section -->
+  <div class="tiers-section">
+    <h2>Membership Tiers</h2>
+    <p>The more you shop, the more you save. Advance through our tiers for enhanced benefits.</p>
+
+    <div class="tiers-container">
+      <!-- Silver Tier -->
+      <div class="tier silver">
+        <div>
+          <h3>Silver</h3>
+          <span>0-499 points</span>
+          <ul>
+            <li>1 point per $1 spent</li>
+            <li>Birthday special offer</li>
+            <li>Weekly exclusive deals</li>
+            <li>Digital receipts</li>
+          </ul>
+        </div>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+
+      <!-- Gold Tier -->
+      <div class="tier gold">
+        <div>
+          <h3>Gold</h3>
+          <span>500-999 points</span>
+          <div class="most-popular">MOST POPULAR</div>
+          <ul>
+            <li>All Silver benefits</li>
+            <li>1.5 points per $1 spent</li>
+            <li>Free delivery on orders over $50</li>
+            <li>Early access to weekly deals</li>
+            <li>Exclusive seasonal tastings</li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-gold">Join Now</a>
+      </div>
+
+      <!-- Royal Tier -->
+      <div class="tier royal">
+        <div>
+          <h3>Royal</h3>
+          <span>1000+ points</span>
+          <ul>
+            <li>All Gold benefits</li>
+            <li>2 points per $1 spent</li>
+            <li>Free delivery on all orders</li>
+            <li>Personal shopping assistant</li>
+            <li>5% discount on all purchases</li>
+            <li>Exclusive VIP events</li>
+          </ul>
+        </div>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Points System Explanation -->
+  <div class="container">
+    <div class="header">Points System Explained</div>
+    <div class="content">
+
+      <!-- Earning Points Details -->
+      <h3>Earning Points</h3>
+      <ul class="points-list">
+        <li><span class="badge">1 point</span> for every $1 spent in-store or online</li>
+        <li><span class="badge">2 points</span> for every $1 spent on weekly specials</li>
+        <li><span class="badge">100 points</span> bonus when you sign up</li>
+        <li><span class="badge">50 points</span> bonus on your birthday</li>
+        <li><span class="badge">25 points</span> for referring a friend who joins</li>
+      </ul>
+
+      <!-- Redeeming Points Details -->
+      <h3>Redeeming Points</h3>
+      <ul class="points-list">
+        <li><span class="badge">200 points</span> $5 off your next purchase</li>
+        <li><span class="badge">400 points</span> $10 off your next purchase</li>
+        <li><span class="badge">500 points</span> Free delivery for a month</li>
+        <li><span class="badge">1000 points</span> $30 off your next purchase</li>
+        <li><span class="badge">2000 points</span> Exclusive cooking class invitation</li>
+      </ul>
+
+      <!-- Points Expiry Notice -->
+      <div class="footer">
+        <strong>Points Never Expire</strong><br />
+        As long as you make at least one purchase every 12 months, your points will never expire. Enjoy the flexibility to save up for bigger rewards!
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Members Say</h2>
+    <div class="testimonial-container">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img src="image/per-1.avif" alt="Sarah Thompson" />
+          <div>
+            <div class="name">Sarah Thompson</div>
+            <div class="role">Gold Member</div>
+          </div>
+        </div>
+        <p>
+          "I've saved over $200 this year with the Queens Loyalty Program. The points add up quickly, especially with the weekly specials!"
+        </p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img src="image/per-2.avif" alt="Michael Rodriguez" />
+          <div>
+            <div class="name">Michael Rodriguez</div>
+            <div class="role">Gold Member</div>
+          </div>
+        </div>
+        <p>
+          "The free delivery benefit in the Gold tier has been amazing. I order my groceries online every week and the savings really add up."
+        </p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img src="image/per-3.avif" alt="Jennifer Chen" />
+          <div>
+            <div class="name">Jennifer Chen</div>
+            <div class="role" style="color:orange;">Royal Member</div>
+          </div>
+        </div>
+        <p>
+          "As a Royal member, the 5% discount on all purchases plus the points makes a huge difference for our family budget. Highly recommend!"
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <h3>Ready to Start Earning Rewards?</h3>
+    <p>Join our Loyalty Program today and start earning points with your very first purchase. Sign up in-store or online in just minutes.</p>
+    <button class="btn-dark">Learn More</button>
+    <button class="btn-light">Sign Up</button>
+  </section>
+
+  <!-- FAQ Section -->
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <!-- FAQ Item 1 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        How do I sign up for the loyalty program?
+        <span class="arrow">&#9650;</span>
+      </div>
+      <div class="faq-answer">
+        You can sign up for our loyalty program in-store at any checkout counter, or online through your account settings.
+        It's completely free to join and you'll earn 100 bonus points just for signing up!
+      </div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        How do I check my points balance?
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        You can check your points balance anytime by logging into your account on our website or mobile app.
+      </div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        Can I share my points with family members?
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        Points are non-transferable and can only be used by the account holder who earned them.
+      </div>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        Do my points expire?
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        Your points will never expire as long as you make at least one purchase every 12 months.
+      </div>
+    </div>
+
+    <!-- FAQ Item 5 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        How do I redeem my points?
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        You can redeem your points at checkout by selecting from available rewards in your account.
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- Footer Column 1: About -->
+      <div class="footer-column">
+        <h3><i class="fa-solid fa-crown orange-text"></i> Queens</h3>
+        <p>Your local market with royal quality! We provide fresh produce daily with a focus on local suppliers and affordable prices.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer Column 2: Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Weekly Deals</a></li>
+          <li><a href="#">Loyalty Program</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Column 3: Contact -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot orange-text"></i> 123 Market Street, Cityville, State 12345</p>
+        <p><i class="fa-solid fa-phone orange-text"></i> (555) 123-4567</p>
+        <p><i class="fa-solid fa-envelope orange-text"></i> info@queensmarket.com</p>
+      </div>
+
+      <!-- Footer Column 4: Opening Hours -->
+      <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <p><i class="fa-regular fa-clock orange-text"></i> Monday - Friday <br /><span class="orange-text">8:00 AM - 9:00 PM</span></p>
+        <p><i class="fa-regular fa-clock orange-text"></i> Saturday <br /><span class="orange-text">8:00 AM - 7:00 PM</span></p>
+        <p><i class="fa-regular fa-clock orange-text"></i> Sunday <br /><span class="orange-text">10:00 AM - 6:00 PM</span></p>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Text -->
+    <div class="footer-bottom">
+      &copy; 2025 Queens Supermarket. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Animate testimonials when they enter viewport on scroll
+    const testimonials = document.querySelectorAll('.testimonial');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      testimonials.forEach((testimonial, i) => {
+        const rect = testimonial.getBoundingClientRect();
+        if (rect.top < triggerBottom) {
+          setTimeout(() => {
+            testimonial.classList.add('visible'); // Add class to trigger CSS animation
+          }, i * 200); // Stagger animations by 200ms
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // FAQ toggle functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const arrow = question.querySelector('.arrow');
+
+        // Toggle FAQ answer display and arrow direction
+        if (answer.style.display === "block") {
+          answer.style.display = "none";
+          arrow.innerHTML = "&#9660;"; // Down arrow
+          arrow.classList.remove("rotate");
+        } else {
+          // Close all other FAQ answers
+          document.querySelectorAll('.faq-answer').forEach(a => a.style.display = "none");
+          document.querySelectorAll('.arrow').forEach(a => a.innerHTML = "&#9660;");
+          document.querySelectorAll('.arrow').forEach(a => a.classList.remove("rotate"));
+
+          // Open selected FAQ answer
+          answer.style.display = "block";
+          arrow.innerHTML = "&#9650;"; // Up arrow
+          arrow.classList.add("rotate");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

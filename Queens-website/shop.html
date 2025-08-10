@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Queens Supermarket</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- Logo with emoji for branding -->
+    <div class="logo">
+      <span>👑</span> Queens
+    </div>
+
+    <!-- Main navigation menu -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="Weekly-Deals.html">Weekly Deals</a></li>
+      <li><a href="Loyalty-Program.html">Loyalty Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Placeholder for future icons (e.g., cart, user) -->
+    <div class="icons"></div>
+  </nav>
+
+  <!-- Shop Page Header -->
+  <div class="shop-header">
+    <h2>All Products</h2>
+    <p>Browse our full selection of fresh, high-quality products.</p>
+  </div>
+
+  <!-- Search and Filter Controls -->
+  <div class="shop-controls">
+    <!-- Search input for filtering products by name -->
+    <div class="search-box">
+      <i class="fa fa-search"></i>
+      <input type="text" id="search" placeholder="Search products..." />
+    </div>
+
+    <!-- Sort dropdown to arrange products by popularity or price -->
+    <select class="filter-select">
+      <option>Most Popular</option>
+      <option>Lowest Price</option>
+      <option>Highest Price</option>
+    </select>
+  </div>
+
+  <!-- Shop Layout Container -->
+  <div class="shop-container">
+
+    <!-- Categories Sidebar -->
+    <div class="categories">
+      <h3>Categories</h3>
+      <ul>
+        <!-- Each category has a data-category attribute for JS filtering -->
+        <li data-category="all"><i class="fa-solid fa-apple-whole"></i> Fruits</li>
+        <li data-category="vegetables"><i class="fa-solid fa-carrot"></i> Vegetables</li>
+        <li data-category="bakery"><i class="fa-solid fa-bread-slice"></i> Bakery</li>
+        <li data-category="dairy"><i class="fa-solid fa-cheese"></i> Dairy</li>
+        <li data-category="meat"><i class="fa-solid fa-drumstick-bite"></i> Meat</li>
+        <li data-category="snacks"><i class="fa-solid fa-cookie"></i> Snacks</li>
+      </ul>
+    </div>
+
+    <!-- Products Grid/List -->
+    <div class="products" id="product-list">
+
+      <!-- Individual Product Card -->
+      <div class="product-card" data-category="bakery">
+        <img src="image/mae-mu-m9pzwmxm2rk-unsplash.jpg" alt="Croissants" />
+        <div class="product-info">
+          <h4>Croissants</h4>
+          <p>$3.49</p>
+          <span class="rating">⭐ 4.9</span>
+        </div>
+        <!-- Button to add product to shopping cart -->
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <!-- Repeat product cards for other products -->
+
+      <div class="product-card" data-category="fruits">
+        <img src="image/photo-1744659753302-9f4fc320f085.avif" alt="Organic Bananas" />
+        <div class="product-info">
+          <h4>Organic Bananas</h4>
+          <p>$1.99</p>
+          <span class="rating">⭐ 4.8</span>
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="bakery">
+        <img src="image/br.avif" alt="Sourdough Bread" />
+        <div class="product-info">
+          <h4>Sourdough Bread</h4>
+          <p>$4.99</p>
+          <span class="rating">⭐ 4.8</span>
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="snacks">
+        <img src="image/nat.avif" alt="Mixed Nuts" />
+        <div class="product-info">
+          <h4>Mixed Nuts</h4>
+          <p>$6.99</p>
+          <span class="rating">⭐ 4.8</span>
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="fruits">
+        <img src="image/Fresh Strawberries.avif" alt="Fresh Strawberries" />
+        <div class="product-info">
+          <h4>Fresh Strawberries</h4>
+          <p>$3.99</p>
+          <span class="rating">⭐ 4.7</span>
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="dairy">
+        <img src="image/ch.avif" alt="Cheddar Cheese" />
+        <div class="product-info">
+          <h4>Cheddar Cheese</h4>
+          <p>$5.99</p>
+          <span class="rating">⭐ 4.7</span>
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="vegetables">
+        <img src="image/carrot.avif" alt="Carrots" />
+        <div class="product-info">
+          <h4>Carrots</h4>
+          <p>$1.29</p>
+          <span class="rating">⭐ 4.6</span>
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="meat">
+        <img src="image/cb.avif" alt="Chicken Breast" />
+        <div class="product-info">
+          <h4>Chicken Breast</h4>
+          <p>$7.99</p>
+          <span class="rating">⭐ 4.6</span>
+        </div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inline JavaScript for category filtering -->
+  <script>
+    // Select all category list items
+    const categoryItems = document.querySelectorAll(".categories li");
+    // Select all product cards
+    const products = document.querySelectorAll(".product-card");
+
+    // Add click event to each category for filtering
+    categoryItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        // Get the category to filter
+        const category = item.getAttribute("data-category");
+
+        // Show or hide products based on selected category
+        products.forEach((product) => {
+          if (category === "all" || product.getAttribute("data-category") === category) {
+            product.style.display = "block"; // Show product
+          } else {
+            product.style.display = "none"; // Hide product
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
